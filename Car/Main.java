@@ -7,21 +7,21 @@ public class Main {
 
 }
 
-//Тип кузова
+//Виды кузова
 enum TypeCar {
 
     SEDAN,
     PICKUP
 }
 
-//Тип топлива
+//Виды топлива
 enum TypeFuel {
 
     GASOLINE,
     DISEL
 }
 
-//Тип КПП
+//Виды КПП
 enum TypeGearBox {
 
     MT,
