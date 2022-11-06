@@ -1,7 +1,6 @@
-//Класс Пикап расширяет Car и реализет методы заправки и очистки
+//Класс Пикап использует описание ТС и реализует методы заправки и очистки
 class PickUp extends Car implements Refuling, Wiping
 {
-    private int loadCapacity;
 
     //Переопределить метод завправки, очистки лобового стекла, основного света и зеркал
     @Override
@@ -11,7 +10,8 @@ class PickUp extends Car implements Refuling, Wiping
     public void wipMirrors(){}
     
 
-
+    //Значение мощености двигателя
+    private int loadCapacity;
 
     //Позволяет хранить значение мощности двигателя
     public int getLoadCapacity() {
@@ -30,7 +30,7 @@ class PickUp extends Car implements Refuling, Wiping
 
 
 
-//Класс Футуристичное ТС расширяет Car
+//Класс Футуристичное ТС использует описание ТС
 class FutureCar extends Car
 {
     FutureCar()
@@ -46,8 +46,7 @@ class FutureCar extends Car
         fly();
     }
 
+    //Метод полета
     private void fly(){}
 
 }
-
-//Могу ошибаться в функциях 
