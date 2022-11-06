@@ -28,6 +28,7 @@ enum TypeGearBox {
     AT
 }
 
+//Описывает класс машина (из чего она состоит)
 abstract class Car {
     private String make;
     private String model;
