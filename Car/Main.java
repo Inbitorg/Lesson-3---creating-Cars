@@ -2,7 +2,6 @@ import javafx.scene.paint.Color;
 
 public class Main {
     public static void main(String[] arg) {
-        System.out.println("hello world!");
     }
 
 }
