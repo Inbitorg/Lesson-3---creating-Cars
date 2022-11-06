@@ -7,18 +7,21 @@ public class Main {
 
 }
 
+//Тип кузова
 enum TypeCar {
 
     SEDAN,
     PICKUP
 }
 
+//Тип топлива
 enum TypeFuel {
 
     GASOLINE,
     DISEL
 }
 
+//Тип КПП
 enum TypeGearBox {
 
     MT,
@@ -37,7 +40,12 @@ abstract class Car {
 
 
 
-
+    //Методы:
+    //Движение
+    //Обслуживание
+    //Переключение КПП
+    //Переключение основного света
+    //Переключение дворников
     public void movement() {
     }
 
@@ -58,12 +66,12 @@ abstract class Car {
 
 
 
-    //метод якорь
+    //Метод якорь
     //public void sweeping(){}
 
 
 
-    //марка ТС                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    //Метод установки марки ТС                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     public void setMake(String make) {
         this.make = make;
     }
@@ -74,7 +82,7 @@ abstract class Car {
 
 
 
-    //модель ТС
+    //Метод установки модели ТС
     public void setModel(String model) {
         this.model = model;
     }
@@ -85,7 +93,7 @@ abstract class Car {
 
 
 
-    //цвет ТС
+    //Метод установки цвета ТС
     public void setColor(Color color) {
         this.color = color;
     }
@@ -96,7 +104,7 @@ abstract class Car {
 
 
 
-    //тип кузова
+    //Метод установки кузова ТС
     public void setBodyType(TypeCar bodyType) {
         this.bodyType = bodyType;
     }
@@ -107,7 +115,7 @@ abstract class Car {
 
 
 
-    //кол-во колес
+    //Метод установки кол-ва колес ТС
     public void setNumberWheels(int numberWheels) {
         this.numberWheels = numberWheels;
     }
@@ -118,7 +126,7 @@ abstract class Car {
 
 
 
-    //тип используемого топлива
+    //Метод установки топлива ТС
     public void setFuelType(TypeFuel fuelType) {
         this.fuelType = fuelType;
     }
@@ -129,7 +137,7 @@ abstract class Car {
 
 
 
-    //тип КПП
+    //Метод установки КПП ТС
     public void setGearboxType(TypeGearBox gearboxType) {
         this.gearboxType = gearboxType;
     }
@@ -140,7 +148,7 @@ abstract class Car {
 
 
 
-    //мощность двигателя ТС
+    //Метод установки мощности двигателя ТС
     public void setEngineCapacity(double engineCapacity) {
         this.engineCapacity = engineCapacity;
     }
@@ -151,13 +159,13 @@ abstract class Car {
 
 }
 
-// интерфейс заправки
+//Интерфейс заправки
 interface Refuling
 {
     void fuel();
 }
 
-//интерфейс очистки лобового стекла, основного света и зеркал
+//Интерфейс очистки лобового стекла, основного света и зеркал
 interface Wiping
 {
     void wipWindShield();
